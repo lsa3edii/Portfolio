@@ -4,6 +4,7 @@ const projectsTitles = [
   "Brain Cancer Multi Classification - Deep Learning Project",
   "Text Classification for Multi Cancer - NLP Project",
   "Project Management System - Java Project",
+  "MNIST Digits Classification - Pattern Recognition Project",
   "Alert Program for Laptop Battery Charger",
 ];
 
@@ -13,7 +14,8 @@ const descriptions = [
   "This project presents an approach for brain tumor classification MRI using CNNs and demonstrates its superior performance in image classification.",
   "NLP project for multi-cancer text classification by using LSTM on a dataset containing colon, lung, and thyroid cancer.",
   "This desktop application is used to manage projects and tasks and it consists of 4 modules: (admin, project-manager, team-leader and employee).",
-  "Monitors laptop battery status and alerts when status changes.",
+  "Handwritten digits recognition is a classic problem in the field of image classification. The MNIST dataset, consisting of 60,000 training and 10,000 testing grayscale images of handwritten digits.",
+  "Short Video: Monitors laptop battery status and alerts when status changes.",
 ];
 
 const videos = [
@@ -22,6 +24,7 @@ const videos = [
   "https://www.youtube.com/embed/B4n_O51cDB0",
   "https://www.youtube.com/embed/G8wwJ3u0bY8",
   "https://www.youtube.com/embed/s333rvKEnOs",
+  "https://www.youtube.com/embed/JYuBZA52BmQ",
   "https://www.youtube.com/embed/HvdsDFNALlg",
 ];
 
@@ -39,6 +42,7 @@ async function updateText() {
   projectTitle.innerHTML = projectsTitles[index];
   description.innerHTML = descriptions[index];
 }
+
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
