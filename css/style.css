@@ -23,6 +23,7 @@ body {
     --link-color: #1155CC;
     --section-padding: 25px 0px;
     --content-padding: 20px 40px;
+    --border-radius-content: 25px;
 }
 
 ::selection {
@@ -191,11 +192,13 @@ body {
 .landing {
     position: relative;
     margin-top: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     height: 500px;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .landing .intro-text {
@@ -289,6 +292,11 @@ body {
         right: -110px !important;
         transition: 0.3s;
     }
+
+    .about .info div img {
+        margin-bottom: 5px;
+        transition: 0.3s;
+    }
 }
 
 .landing .circle {
@@ -342,7 +350,9 @@ body {
 
 .about .about-content {
     padding: var(--content-padding);
-    padding-top: 8px;
+    padding-top: 15px;
+    /* margin: 0 5px; */
+    border-radius: var(--border-radius-content);
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
 }
 
@@ -360,8 +370,10 @@ body {
 
 .about .info div img {
     padding: 5px;
-    border-radius: 50px;
+    width: 90px;
+    border-radius: 100px;
     border: 3px solid var(--second-color);
+    transition: 0.3s;
 }
 
 .about .info div img:hover {
@@ -377,6 +389,7 @@ body {
 
 .education .education-content {
     padding: var(--content-padding);
+    border-radius: var(--border-radius-content);
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
 }
 
@@ -438,6 +451,7 @@ body {
 
 .background .background-content {
     padding: var(--content-padding);
+    border-radius: var(--border-radius-content);
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
 }
 
@@ -483,6 +497,7 @@ body {
 
 .experience .experience-content {
     padding: var(--content-padding);
+    border-radius: var(--border-radius-content);
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
 }
 
@@ -564,6 +579,7 @@ body {
 
 .projects .projects-content {
     padding: var(--content-padding);
+    border-radius: var(--border-radius-content);
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
 }
 
@@ -617,9 +633,9 @@ body {
 }
 
 .projects .info iframe {
-    width: 900px;
-    height: 550px;
-    border-radius: 15px;
+    width: 920px;
+    height: 540px;
+    border-radius: 50px;
     padding-bottom: 20px;
 }
 
@@ -657,6 +673,8 @@ body {
 
 .contact .contact-content {
     padding: var(--content-padding);
+    border-top-left-radius: var(--border-radius-content);
+    border-top-right-radius: var(--border-radius-content);
     background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
     /* height: 300px; */
 }
@@ -749,3 +767,14 @@ body {
 .footer span:hover {
     color: var(--nav-color);
 }
+
+/* .about .about-content,
+.education .education-content,
+.background .background-content,
+.experience .experience-content,
+.projects .projects-content,
+.contact .contact-content {
+    padding: var(--content-padding);
+    border-radius: var(--border-radius-content);
+    background: linear-gradient(to right, rgb(25, 25, 25), var(--main-color), rgb(25, 25, 25));
+} */
