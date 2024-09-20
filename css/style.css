@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, rgb(150, 150, 150), var(--second-color));
+    background: linear-gradient(to right, rgb(150, 150, 150), var(--second-color), rgb(150, 150, 150));
 }
 
 :root {
@@ -69,6 +69,7 @@ body {
     margin: 0;
     /* padding: 7px; */
     font-size: 40px;
+    text-transform: uppercase;
     letter-spacing: 10px;
     color: var(--nav-color);
 }
@@ -264,6 +265,10 @@ body {
     border-bottom-left-radius: 50px; */
 }
 
+.landing img:hover {
+    border-color: var(--second-color);
+}
+
 @media (max-width: 1286px) {
     .landing img {
         width: 350px;
@@ -297,7 +302,21 @@ body {
         margin-bottom: 5px;
         transition: 0.3s;
     }
+
+    /* .education .info p {
+        font-size: 22px !important;
+    } */
+
+    .projects .info #description {
+        height: 145px;
+    }
 }
+
+/* @media (max-width: 1000px) {
+    .projects .info #project-title {
+        font-size: 40px !important;
+    }
+} */
 
 .landing .circle {
     width: 15px;
@@ -317,6 +336,7 @@ body {
     height: 15px;
     display: flex;
     margin-bottom: 10px;
+    /* transition: 0.3s; */
 }
 
 .landing .circle span:hover {
@@ -327,11 +347,12 @@ body {
 /* End Landing */
 
 .special-heading {
+    text-transform: uppercase;
     color: var(--main-color);
-    font-size: 95px;
+    font-size: 90px;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 30px;
+    letter-spacing: 25px;
     margin: 0px 0px 5px;
 }
 
@@ -371,12 +392,14 @@ body {
 .about .info div img {
     padding: 5px;
     width: 90px;
+    height: 90px;
     border-radius: 100px;
     border: 3px solid var(--second-color);
     transition: 0.3s;
 }
 
 .about .info div img:hover {
+    padding: 7px;
     border-color: var(--nav-color);
 }
 
@@ -396,14 +419,21 @@ body {
 .education .info div {
     display: flex;
     justify-content: space-between;
+    /* gap: 1px; */
 }
 
 .education .info p {
     color: var(--second-color);
     font-size: 25px;
     margin: 0;
-    text-align: center;
     line-height: 1.5;
+    /* text-align: center; */
+}
+
+.education .info .date {
+    min-width: fit-content;
+    text-align: center;
+    /* padding-left: 30px; */
 }
 
 .education .info span {
@@ -430,6 +460,11 @@ body {
     height: 50px;
 }
 
+.education .info .img-grad {
+    width: 50px;
+    height: 50px;
+}
+
 .education .info li {
     color: var(--second-color);
     font-size: 20px;
@@ -438,7 +473,7 @@ body {
 }
 
 .education .info hr {
-    margin: 25px auto 10px;
+    margin: 35px auto 15px;
     width: 75%;
 }
 
@@ -466,7 +501,7 @@ body {
     border-radius: 10px;
     padding: 5px 10px;
     width: fit-content;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
@@ -485,7 +520,7 @@ body {
 
 .background .info .animation {
     /* width: 50%; */
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 /* End Background */
@@ -504,11 +539,13 @@ body {
 .experience .info div {
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
 }
 
 .experience .info p {
     color: var(--second-color);
     font-size: 25px;
+    min-width: fit-content;
     margin: 0;
     text-align: center;
     line-height: 1.5;
@@ -539,6 +576,7 @@ body {
 
 .experience .info ul {
     padding-left: 15px;
+    /* padding-right: 25px; */
     max-width: 1100px;
 }
 
@@ -589,7 +627,7 @@ body {
 
 .projects .info #project-title {
     display: inline-block;
-    font-size: 45px;
+    font-size: 44px;
     background-color: var(--second-color);
     color: var(--main-color);
     font-weight: bold;
@@ -664,6 +702,11 @@ body {
     margin-left: 7px;
 }
 
+.projects .info p a img:hover {
+    padding: 2px;
+    background-color: black;
+}
+
 /* End Projects */
 
 /* Start Contact */
@@ -712,10 +755,40 @@ body {
     /* cursor: pointer; */
 }
 
+.contact .info .img:hover {
+    border: 2px solid var(--nav-color);
+}
+
 .contact .info .social-media p {
     margin-bottom: 10px;
     font-size: 20px;
     color: var(--second-color);
+}
+
+.contact .info .count-views:hover {
+    color: var(--link-color);
+}
+
+.contact .info .social-media img {
+    width: 35px;
+    margin-bottom: 5px;
+    /* cursor: pointer; */
+}
+
+.contact .info .social-media img:hover {
+    border: 2px solid var(--second-color);
+    border-radius: 25px;
+}
+
+.contact .info .social-media .github {
+    border: 2px solid var(--second-color);
+    border-radius: 25px;
+}
+
+.contact .info .social-media .github:hover {
+    padding: 1.5px;
+    background-color: black;
+    border-color: var(--nav-color);
 }
 
 .contact .info span {
@@ -733,20 +806,9 @@ body {
     padding: 3px 7px;
 }
 
-.contact .info .count-views:hover {
-    color: var(--link-color);
-}
-
-.contact .info .social-media img {
-    width: 35px;
-    margin-bottom: 5px;
-    /* cursor: pointer; */
-}
-
-.contact .info .social-media .github {
-    border: 2px solid var(--second-color);
-    border-radius: 25px;
-}
+/* .contact .info .count-views:hover {
+    cursor: default;
+} */
 
 /* End Contact */
 
