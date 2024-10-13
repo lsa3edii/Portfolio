@@ -89,7 +89,9 @@ body {
 }
 
 .nav:hover {
-    border-color: var(--nav-color);
+    border-top-color: var(--nav-color);
+    border-right-color: var(--nav-color);
+    border-left-color: var(--nav-color);
 }
 
 .links {
@@ -100,14 +102,24 @@ body {
     width: 30px;
     display: flex;
     flex-wrap: wrap;
-    direction: rtl;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
+    /* direction: rtl; */
 }
+
+.nav:hover .links .icon {
+    justify-content: center;
+}
+
+/* .nav:hover .links .icon span:not(:nth-child(2)) {
+    margin-right: auto;
+    margin-left: auto;
+} */
 
 .links .icon span {
     background-color: var(--second-color);
     margin-bottom: 5px;
     height: 2.5px;
+    transition: 0.3s;
 }
 
 .links .icon span:first-child {
@@ -116,20 +128,28 @@ body {
 
 .links .icon span:nth-child(2) {
     width: 70%;
-    transition: 0.3s;
 }
 
 .links .icon span:last-child {
     width: 100%;
 }
 
-.links:hover span:nth-child(2) {
+.nav:hover span:nth-child(2) {
     width: 100%;
-}
-
-.icon:hover span {
     background-color: var(--nav-color);
 }
+
+.nav:hover .icon span:not(:nth-child(2)) {
+    width: 60%;
+}
+
+/* .nav span:hover span:nth-child(3) {
+    width: 75%;
+} */
+
+/* .nav:hover span span {
+    background-color: var(--nav-color);
+} */
 
 .links ul {
     list-style: none;
@@ -145,10 +165,15 @@ body {
     /* transition: 0.3s; */
 }
 
-.links:hover ul {
+.nav:hover ul {
     display: block;
     border-radius: 5px;
 }
+
+/* .links:hover ul {
+    display: block;
+    border-radius: 5px;
+} */
 
 .links ul::after {
     content: "";
@@ -248,6 +273,10 @@ body {
     margin-left: 20px;
 }
 
+.landing .collection>span:nth-of-type(3):hover {
+    background-color: var(--nav-color);
+}
+
 .landing img {
     position: absolute;
     top: 5%;
@@ -266,7 +295,10 @@ body {
 }
 
 .landing img:hover {
+    /* border-width: 3px; */
     border-color: var(--second-color);
+    border-bottom-color: var(--nav-color);
+    border-left-color: var(--nav-color);
 }
 
 @media (max-width: 1286px) {
@@ -365,12 +397,22 @@ body {
     height: 15px;
     display: flex;
     margin-bottom: 10px;
+    cursor: default;
     /* transition: 0.3s; */
 }
 
 .landing .circle span:hover {
     background-color: var(--second-color);
     /* border-color: var(--nav-color); */
+}
+
+.landing .circle span:nth-child(2) {
+    border-color: var(--nav-color);
+}
+
+.landing .circle span:nth-child(2):hover {
+    background-color: var(--nav-color);
+    border-color: var(--nav-color);
 }
 
 /* End Landing */
@@ -502,7 +544,7 @@ body {
 }
 
 .education .info hr {
-    margin: 35px auto 15px;
+    margin: 40px auto 15px;
     width: 75%;
 }
 
@@ -541,6 +583,16 @@ body {
     font-size: 20px;
     margin-left: 20px;
     line-height: 1.4;
+}
+
+.background .info li a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.background .info li a:hover {
+    color: var(--link-color);
+    /* font-weight: bold; */
 }
 
 .background .info p {
@@ -599,6 +651,7 @@ body {
 
 .experience .info .freelance {
     display: inline-block;
+    margin-top: 5px;
     font-size: 35px;
     font-weight: bold;
 }
@@ -617,6 +670,10 @@ body {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+}
+
+.experience .info>div:nth-of-type(2) ul {
+    margin-top: 10px;
 }
 
 .experience .info li {
@@ -763,11 +820,21 @@ body {
     /* letter-spacing: -1px; */
 }
 
+.contact .info>p:first-child {
+    margin-top: 10px;
+}
+
 .contact .info .email {
     text-decoration: none;
     color: var(--second-color);
     font-size: 30px;
     border-bottom: solid 1px var(--second-color);
+    /* font-weight: bold; */
+}
+
+.contact .info .email:hover {
+    color: var(--link-color);
+    border-color: var(--link-color);
     /* font-weight: bold; */
 }
 
