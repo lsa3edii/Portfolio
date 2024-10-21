@@ -6,6 +6,7 @@ const projectsTitles = [
   "Project Management System - Java Project",
   "MNIST Digits Classification - Pattern Recognition Project",
   "Alert Program for Laptop Battery Charger",
+  "My Portfolio",
 ];
 
 const descriptions = [
@@ -16,6 +17,7 @@ const descriptions = [
   "This desktop application is used to manage projects and tasks and it consists of 4 modules: (admin, project-manager, team-leader and employee).",
   "Handwritten digits recognition is a classic problem in the field of image classification. The MNIST dataset, consisting of 60,000 training and 10,000 testing grayscale images of handwritten digits.",
   "Short Video: Monitors laptop battery status and alerts when status changes.",
+  "Simple Portfolio by using HTML, CSS, and JavaScript.",
 ];
 
 const videos = [
@@ -26,6 +28,7 @@ const videos = [
   "https://www.youtube.com/embed/s333rvKEnOs",
   "https://www.youtube.com/embed/JYuBZA52BmQ",
   "https://www.youtube.com/embed/HvdsDFNALlg",
+  "https://www.youtube.com/embed/hQKByHd4Pt4",
 ];
 
 let index = 0;

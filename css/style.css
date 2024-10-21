@@ -712,12 +712,13 @@ body {
 }
 
 .projects .info #project-title {
-    display: inline-block;
+    /* display: inline-block; */
+    width: fit-content;
     font-size: 44px;
     background-color: var(--second-color);
     color: var(--main-color);
     font-weight: bold;
-    margin: 10px 0 15px;
+    margin: 10px auto 15px;
     padding: 5px 10px;
     border-radius: 15px;
 }
