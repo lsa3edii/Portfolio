@@ -296,9 +296,9 @@ body {
 
 .landing img:hover {
     /* border-width: 3px; */
-    border-color: var(--second-color);
-    border-bottom-color: var(--nav-color);
-    border-left-color: var(--nav-color);
+    border-color: var(--nav-color);
+    border-bottom-color: var(--second-color);
+    border-left-color: var(--second-color);
 }
 
 @media (max-width: 1286px) {
