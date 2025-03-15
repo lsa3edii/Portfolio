@@ -794,6 +794,18 @@ body {
     background-color: black;
 }
 
+.count-vid {
+    width: fit-content;
+    margin: 7px auto !important;
+    padding: 0 25px;
+    border-radius: 50px;
+    color: var(--main-color) !important;
+    font-size: 35px !important;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--second-color);
+}
+
 /* End Projects */
 
 /* Start Contact */

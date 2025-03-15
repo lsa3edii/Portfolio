@@ -1,4 +1,50 @@
-const projectsTitles = [
+let index = 0;
+const iframe = document.querySelector("iframe");
+const projectTitle = document.getElementById("project-title");
+const description = document.getElementById("description");
+const countVid = document.querySelector(".count-vid");
+
+
+let projects = [];
+
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
+    projects = data;
+    updateProject();
+  })
+  .catch(error => console.error("Error loading JSON:", error));
+
+
+  function updateProject() {
+    if (projects.length > 0) {
+      iframe.src = projects[index].video;
+      projectTitle.innerHTML = projects[index].title;
+      description.innerHTML = projects[index].description;
+      countVid.innerHTML = `${index + 1} / ${projects.length}`;
+    }
+  }
+
+
+document.getElementById("prev").addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateProject();
+  }
+});
+
+
+document.getElementById("next").addEventListener("click", () => {
+  if (index < projects.length - 1) {
+    index++;
+    updateProject();
+  }
+});
+
+
+
+/* 
+  const projectsTitles = [
   "Graduation Project",
   "Simple Search Engine - Information Retrieval Project",
   "Brain Cancer Multi Classification - Deep Learning Project",
@@ -30,38 +76,4 @@ const videos = [
   "https://www.youtube.com/embed/HvdsDFNALlg",
   "https://www.youtube.com/embed/hQKByHd4Pt4",
 ];
-
-let index = 0;
-const iframe = document.querySelector("iframe");
-const projectTitle = document.getElementById("project-title");
-const description = document.getElementById("description");
-
-function updateVideo() {
-  iframe.src = videos[index];
-}
-
-async function updateText() {
-  await delay(200);
-  projectTitle.innerHTML = projectsTitles[index];
-  description.innerHTML = descriptions[index];
-}
-
-function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-document.getElementById("prev").addEventListener("click", () => {
-  if (index > 0) {
-    index--;
-    updateVideo();
-    updateText();
-  }
-});
-
-document.getElementById("next").addEventListener("click", () => {
-  if (index < videos.length - 1) {
-    index++;
-    updateVideo();
-    updateText();
-  }
-});
+*/
