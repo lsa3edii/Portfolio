@@ -35,7 +35,7 @@ function initGame() {
     
     // Assign to cards
     cards.forEach((card, index) => {
-        card.src = "gameAssets/moon.png";
+        // card.src = "gameAssets/moon.png";
         card.alt = gameImages[index];
         card.onclick = handleCardClick;
     });
