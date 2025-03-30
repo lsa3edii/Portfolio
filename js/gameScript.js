@@ -35,8 +35,9 @@ function initGame() {
     
     // Assign to cards
     cards.forEach((card, index) => {
-        // card.src = "gameAssets/moon.png";
+        card.src = "gameAssets/moon.png";  // Ensure all cards reset
         card.alt = gameImages[index];
+        card.classList.remove('disabled'); // Remove disabled class
         card.onclick = handleCardClick;
     });
 }
@@ -63,29 +64,36 @@ function shuffleArray(array) {
 
 // Card click handler
 function handleCardClick() {
-    if (this.src.includes(this.alt)) return;
-    
+    if (this.src.includes(this.alt) || this.classList.contains('disabled')) return;
+
     this.src = this.alt;
-    
+    this.classList.add('disabled'); // Prevent clicking on the same card twice
+
     if (!firstCard) {
         firstCard = this;
         return;
     }
-    
+
     if (this.alt === firstCard.alt) {
         this.onclick = null;
         firstCard.onclick = null;
+        firstCard.classList.remove('disabled');
+        this.classList.remove('disabled');
         firstCard = null;
         matchesFound++;
-        
+
         if (matchesFound === allImages.length) {
             celebrateWin();
         }
     } else {
         setTimeout(() => {
-            this.src = "gameAssets/moon.png";
-            firstCard.src = "gameAssets/moon.png";
-            firstCard = null;
+            if (this) this.src = "gameAssets/moon.png";
+            if (firstCard) {
+                firstCard.src = "gameAssets/moon.png";
+                firstCard.classList.remove('disabled');
+                firstCard = null;
+            }
+            this.classList.remove('disabled');
         }, 500);
     }
 }
