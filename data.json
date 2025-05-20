@@ -5,6 +5,21 @@
         "video": "https://www.youtube.com/embed/1HwVtHCv7B0"
     },
     {
+        "title": "Banking System Web Application (ITI)",
+        "description": "This project is a robust and secure web-based banking platform designed to simplify the management of banking operations for users and administrators. With its intuitive interface and powerful backend, it provides essential banking functionalities ranging from account management to transaction processing.",
+        "video": "https://www.youtube.com/embed/PV9CdZ34tAk"
+    },
+    {
+        "title": "Hotel Management System (ITI)",
+        "description": "This project showcases how to manage hotel reservations, room services, and customer data efficiently using C#, .NET, MSSQL Server, implementing Entity Framework, Dapper, Migrations, Benchmarking and Bogus Data.",
+        "video": "https://www.youtube.com/embed/DpWFh8CNeRU"
+    },
+    {
+        "title": "Examination System (ITI)",
+        "description": "Examination System is designed to facilitate a seamless experience for three distinct user roles → Admin: Manages the overall system, users, and settings & Instructor: Creates and manages exams, evaluates student performance & Student: Takes exams and tracks their progress. Using C#, WinForms, MSSQL Server, ADO.NET, MVC, Report Builder, and iTextSharp package.",
+        "video": "https://www.youtube.com/embed/ZUr_lzxwLco"
+    },
+    {
         "title": "Simple Search Engine - Information Retrieval Project",
         "description": "Very simple search engine by using positional index, phrase query and vector space model concepts on a small dataset.",
         "video": "https://www.youtube.com/embed/uSczSTmjNEs"
@@ -13,16 +28,6 @@
         "title": "Brain Cancer Multi Classification - Deep Learning Project",
         "description": "This project presents an approach for brain tumor classification MRI using CNNs and demonstrates its superior performance in image classification.",
         "video": "https://www.youtube.com/embed/B4n_O51cDB0"
-    },
-    {
-        "title": "Hotel Management System",
-        "description": "This project showcases how to manage hotel reservations, room services, and customer data efficiently using C#, .NET, MSSQL Server, implementing Entity Framework, Dapper, Migrations, Benchmarking and Bogus Data.",
-        "video": "https://www.youtube.com/embed/DpWFh8CNeRU"
-    },
-    {
-        "title": "Examination System",
-        "description": "Examination System is designed to facilitate a seamless experience for three distinct user roles → Admin: Manages the overall system, users, and settings & Instructor: Creates and manages exams, evaluates student performance & Student: Takes exams and tracks their progress. Using C#, WinForms, MSSQL Server, ADO.NET, MVC, Report Builder, and iTextSharp package.",
-        "video": "https://www.youtube.com/embed/ZUr_lzxwLco"
     },
     {
         "title": "Project Management System - Java Project",
