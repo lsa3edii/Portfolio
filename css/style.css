@@ -474,6 +474,19 @@ body {
     border-color: var(--nav-color);
 }
 
+.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.cv span {
+    font-weight: bold;
+    /* font-size: 1.5rem; */
+    color: #F8C409 !important;
+}
+
 /* End About */
 
 /* Start Education */
