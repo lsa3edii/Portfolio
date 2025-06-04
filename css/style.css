@@ -479,12 +479,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .cv span {
-    font-weight: bold;
     /* font-size: 1.5rem; */
-    color: #F8C409 !important;
+    color: var(--nav-color) !important;
 }
 
 /* End About */
