@@ -1,62 +1,74 @@
 [
     {
         "title": "Graduation Project",
-        "description": "This project investigates the use of deep learning technology, especially CNNs in the medical field to classify magnetic resonance images (MRI). So, we created a mobile application with many features and linked it to the deep learning model that we had previously trained via an API to help doctors and patients identify whether patients have brain cancer or not. Users in the System → (Admin, Patients, and Doctor).",
-        "video": "https://www.youtube.com/embed/1HwVtHCv7B0"
+        "description": "This project investigates the use of deep learning technology, especially CNNs in the medical field to classify magnetic resonance images (MRI). So, we created a mobile application with many features and linked it to the deep learning model that we had previously trained via an API to help doctors and patients identify whether patients have brain cancer or not. System Users → (Admin, Patients, Doctor).",
+        "video": "https://www.youtube.com/embed/1HwVtHCv7B0",
+        "using_tech": "Python, Jupyter Notebook, Deep Learning, CNN, Flask Framework, Dart, Flutter, Firebase, MVC, RESTful APIs"
     },
     {
         "title": "Banking System Web Application | ASP.NET MVC (ITI)",
-        "description": "This project is a robust and secure web-based banking platform designed to simplify the management of banking operations for users and administrators. With its intuitive interface and powerful backend, it provides essential banking functionalities ranging from account management to transaction processing.",
-        "video": "https://www.youtube.com/embed/PV9CdZ34tAk"
+        "description": "This project is a robust and secure web-based banking platform designed to simplify the management of banking operations for users and administrators. With its intuitive interface and powerful backend, it provides essential banking functionalities ranging from account management to transaction processing. System Users → (Admin, Manager, Teller, Client).",
+        "video": "https://www.youtube.com/embed/PV9CdZ34tAk",
+        "using_tech": "C#, ASP.NET MVC, MSSQL Server, Entity Framework, Clean Architecture"
     },
     {
         "title": "E-Commerce Web Application | Angular (ITI)",
-        "description": "AnguShop is a modern E-Commerce web application built with Angular. It showcases a scalable, maintainable architecture suited for real-world online stores. It uses a mock API for development, enabling a seamless shopping experience with advanced features like role-based access, smart filtering, secure checkout, and admin analytics.",
-        "video": "https://www.youtube.com/embed/enIbwn42kRc"
+        "description": "AnguShop is a modern E-Commerce web application built with Angular. It showcases a scalable, maintainable architecture suited for real-world online stores. It uses a mock API for development, enabling a seamless shopping experience with advanced features like role-based access, smart filtering, secure checkout, and admin analytics. System Users → (Admin, Customer).",
+        "video": "https://drive.google.com/file/d/1TfGEZ9GY5zsY7nVWP28_mG8we-69DmXb/preview",
+        "using_tech": "Angular Framework, JQuery, Mock APIs"
     },
     {
         "title": "Hotel Management System (ITI)",
-        "description": "This project showcases how to manage hotel reservations, room services, and customer data efficiently using C#, .NET, MSSQL Server, implementing Entity Framework, Dapper, Migrations, Benchmarking and Bogus Data.",
-        "video": "https://www.youtube.com/embed/DpWFh8CNeRU"
+        "description": "This project showcases how to manage hotel reservations, room services, and customer data efficiently. System Users → (Manager, Employee).",
+        "video": "https://www.youtube.com/embed/DpWFh8CNeRU",
+        "using_tech": "C#, .NET, WinForms, MSSQL Server, EF, Dapper"
     },
     {
         "title": "Examination System (ITI)",
-        "description": "Examination System is designed to facilitate a seamless experience for three distinct user roles → Admin: Manages the overall system, users, and settings & Instructor: Creates and manages exams, evaluates student performance & Student: Takes exams and tracks their progress. Using C#, WinForms, MSSQL Server, ADO.NET, MVC, Report Builder, and iTextSharp package.",
-        "video": "https://www.youtube.com/embed/ZUr_lzxwLco"
+        "description": "Examination System is designed to facilitate a seamless experience for three distinct user roles → Admin: Manages the overall system, users, and settings & Instructor: Creates and manages exams, evaluates student performance & Student: Takes exams and tracks their progress. System Users → (Admin, Instructor, Student)",
+        "video": "https://www.youtube.com/embed/ZUr_lzxwLco",
+        "using_tech": "C#, .NET, WinForms, MSSQL Server, ADO.NET, MVC design pattern, Report Builder"
     },
     {
         "title": "Simple Search Engine - Information Retrieval Project",
         "description": "Very simple search engine by using positional index, phrase query and vector space model concepts on a small dataset.",
-        "video": "https://www.youtube.com/embed/uSczSTmjNEs"
+        "video": "https://www.youtube.com/embed/uSczSTmjNEs",
+        "using_tech": "Python, Jupyter Notebook"
+    },
+    {
+        "title": "Project Management System - Java Project",
+        "description": "This desktop application is used to manage projects and tasks and it consists of 4 Modules: (Admin, Project-Manager, Team-Leader and Employee).",
+        "video": "https://www.youtube.com/embed/s333rvKEnOs",
+        "using_tech": "Java, Swing, MVC, MSSQL Server"
     },
     {
         "title": "Brain Cancer Multi Classification - Deep Learning Project",
         "description": "This project presents an approach for brain tumor classification MRI using CNNs and demonstrates its superior performance in image classification.",
-        "video": "https://www.youtube.com/embed/B4n_O51cDB0"
-    },
-    {
-        "title": "Project Management System - Java Project",
-        "description": "This desktop application is used to manage projects and tasks and it consists of 4 modules: (admin, project-manager, team-leader and employee).",
-        "video": "https://www.youtube.com/embed/s333rvKEnOs"
+        "video": "https://www.youtube.com/embed/B4n_O51cDB0",
+        "using_tech": "Python, TensorFlow, Keras, Scikit-learn, Deep Learning, CNN, Jupyter Notebook"
     },
     {
         "title": "Text Classification for Multi Cancer - NLP Project",
         "description": "NLP project for multi-cancer text classification by using LSTM on a dataset containing colon, lung, and thyroid cancer.",
-        "video": "https://www.youtube.com/embed/G8wwJ3u0bY8"
+        "video": "https://www.youtube.com/embed/G8wwJ3u0bY8",
+        "using_tech": "Python, TensorFlow, Keras, Scikit-learn, RNN, LSTM, Jupyter Notebook"
     },
     {
         "title": "MNIST Digits Classification - Pattern Recognition Project",
         "description": "Handwritten digits recognition is a classic problem in the field of image classification. The MNIST dataset, consisting of 60,000 training and 10,000 testing grayscale images of handwritten digits.",
-        "video": "https://www.youtube.com/embed/JYuBZA52BmQ"
+        "video": "https://www.youtube.com/embed/JYuBZA52BmQ",
+        "using_tech": "Python, TensorFlow, RNN, LSTM, Jupyter Notebook"
     },
     {
         "title": "Alert Program for Laptop Battery Charger",
         "description": "Short Video: Monitors laptop battery status and alerts when status changes.",
-        "video": "https://www.youtube.com/embed/HvdsDFNALlg"
+        "video": "https://www.youtube.com/embed/HvdsDFNALlg",
+        "using_tech": "Python"
     },
     {
         "title": "My Portfolio",
         "description": "Simple Portfolio by using HTML, CSS, and JavaScript.",
-        "video": "https://www.youtube.com/embed/hQKByHd4Pt4"
+        "video": "https://www.youtube.com/embed/hQKByHd4Pt4",
+        "using_tech": "HTML, CSS, JavaScript"
     }
 ]
