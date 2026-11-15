@@ -43,6 +43,16 @@ document.getElementById("next").addEventListener("click", () => {
   }
 });
 
+document.querySelector('.icon').addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.querySelector('.nav ul').classList.toggle('open');
+    document.querySelector('.nav').classList.toggle('active');
+});
+
+document.addEventListener('click', () => {
+    document.querySelector('.nav ul').classList.remove('open');
+    document.querySelector('.nav').classList.remove('active');
+});
 
 
 /* 
